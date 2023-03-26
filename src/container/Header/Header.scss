@@ -1,0 +1,70 @@
+#home{
+    position: relative;
+    background: url('../../assets/hero_bg.png');
+    margin-top: 5rem;
+    background-size: cover;
+    width: 100%;
+    height: 68vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    padding: 6rem 2rem 0;
+
+    .overlay{
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right:0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+        backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+        
+    }
+.app__header-info{
+  z-index: 5;
+
+  .app__header-hero-text{
+    text-align: center;
+   
+
+    h1{
+        font-size: 80px;
+        color: var(--white-color);
+        margin: 1.5rem 0;
+    }
+
+    p{
+        color: #D2DCFF;
+    }
+    @media screen and (max-width:1200px){
+        
+        h1{
+            font-size: 70px;
+            color: var(--white-color);
+            margin: 1.5rem 0;
+        }
+        }
+    @media screen and (max-width:450px){
+        
+        h1{
+            font-size: 40px;
+            color: var(--white-color);
+            margin: 1.3rem 0;
+        }
+
+        p{
+            color: #D2DCFF;
+            font-size: 16px;
+        }
+    }
+   
+  }
+}
+
+}
