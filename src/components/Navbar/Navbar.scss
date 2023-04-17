@@ -154,6 +154,9 @@
         @media screen and (min-width: 900px ) {
             display: none;
         }
+        @media screen and (max-width: 360px ) {
+            width: 60%;
+        }
     }
     @media screen and (min-width: 900px ) {
         display: none;

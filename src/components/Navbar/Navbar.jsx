@@ -11,7 +11,7 @@ const Navbar = () => {
             <a href="/"><h3>Bee.</h3></a>
         </div>
         <ul className='app__navbar-links'>
-            {['about', 'portfolio', 'services', 'testimonials', 'contact'].map((item) => (
+            {['home', 'about', 'services', 'portfolio',  'testimonials', 'contact'].map((item) => (
                 <li className='app__flex p-text' key={`link-${item}`}>
                     <div/>
                     <a href={`#${item}`}>{item}</a>
@@ -29,7 +29,7 @@ const Navbar = () => {
                         <HiX onClick={() => setToggle(false)
                         }/>
                     <ul >
-                        {['about', 'portfolio', 'services', 'testimonials', 'contact'].map((item) => (
+                        {['home', 'about', 'services', 'portfolio',  'testimonials', 'contact'].map((item) => (
                         <li key={item}>
                             <a href={`#${item}`} onClick={() => setToggle(false)
                         }>{item}</a>
